@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial;
+    background:linear-gradient(to right,#4facfe,#00f2fe);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    background:white;
+    width:500px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0px 0px 20px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.input-section{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+input,
+select,
+button{
+    padding:12px;
+    border-radius:8px;
+    border:1px solid gray;
+    font-size:16px;
+}
+
+button{
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.03);
+}
+
+.dark-btn{
+    margin-bottom:15px;
+}
+
+#searchInput{
+    margin-top:15px;
+    width:100%;
+}
+
+.filter-buttons{
+    display:flex;
+    gap:10px;
+    margin-top:15px;
+}
+
+ul{
+    margin-top:20px;
+}
+
+li{
+    list-style:none;
+    background:#f4f4f4;
+    margin-bottom:15px;
+    padding:15px;
+    border-radius:10px;
+}
+
+.completed{
+    text-decoration:line-through;
+    opacity:0.6;
+}
+
+.task-buttons{
+    margin-top:10px;
+    display:flex;
+    gap:10px;
+}
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode .container{
+    background:#1e1e1e;
+}
+
+.dark-mode li{
+    background:#333;
+}
+
+@media(max-width:600px){
+
+    .container{
+        width:100%;
+    }
+
+}

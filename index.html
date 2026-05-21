@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Secure Smart Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🔒 Secure Smart Task Manager</h1>
+
+        <button class="dark-btn"
+                onclick="toggleDarkMode()">
+
+            🌙 Dark Mode
+
+        </button>
+
+        <div class="input-section">
+
+            <input type="text"
+                   id="taskInput"
+                   placeholder="Enter Task">
+
+            <input type="date"
+                   id="dateInput">
+
+            <select id="priorityInput">
+
+                <option value="High">
+                    High Priority
+                </option>
+
+                <option value="Medium">
+                    Medium Priority
+                </option>
+
+                <option value="Low">
+                    Low Priority
+                </option>
+
+            </select>
+
+            <button onclick="addTask()">
+
+                Add Task
+
+            </button>
+
+        </div>
+
+        <input type="text"
+               id="searchInput"
+               placeholder="🔍 Search Task"
+               onkeyup="searchTask()">
+
+        <div class="filter-buttons">
+
+            <button onclick="filterTasks('all')">
+                All
+            </button>
+
+            <button onclick="filterTasks('completed')">
+                Completed
+            </button>
+
+            <button onclick="filterTasks('pending')">
+                Pending
+            </button>
+
+        </div>
+
+        <h3 id="taskCount"></h3>
+
+        <ul id="taskList"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
